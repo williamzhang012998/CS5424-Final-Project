@@ -13,7 +13,7 @@ This project uses a Raspberry Pi Camera to stream video, a MPU6050 accelerometer
 
 ### a. Hardware Design
 
-### b. Codes
+### b. How to run Program
 
 Before running the program, make sure to configure the raspberry pi camera on your device.
 
@@ -73,6 +73,14 @@ fullbody_recognition_model.xml
 upperbody_recognition_model.xml
 ```
 
+## Running the Project
+
+To run the program
+
+```
+python main.py
+```
+To view live stream of camera, go to `<raspberrypi_ip>:5000` in your browser.
 
 ## 3. Prototype
 
