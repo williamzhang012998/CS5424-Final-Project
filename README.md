@@ -9,9 +9,69 @@
 
 ## 2. Building the System
 
+This project uses a Raspberry Pi Camera to stream video, a MPU6050 accelerometer and a microphone. 
+
 ### a. Hardware Design
 
 ### b. Codes
+
+Before running the program, make sure to configure the raspberry pi camera on your device.
+
+SSH into your pi and run
+
+```
+sudo raspi-config
+```
+
+Select `Interface Options`, then `Pi Camera` and enable it. Press `Finish` and reboot.
+
+### Installing Dependencies
+
+This project uses openCV for object detection. Install the corresponding openCV version for your python version. The python version used for this project is 3. The installation should take a few hours only if you are lucky.
+
+Next install the dependencies for the project
+
+```
+pip install -r requirements.txt
+```
+
+Next to get emails alerts, edit the `mail.py` file.
+
+```
+nano mail.py
+```
+
+Edit the section where it asks you the email you want to send the update from and email you want to send the update to
+
+```
+# Email you want to send the update from (only works with gmail)
+fromEmail = 'myemail@gmail.com'
+fromEmailPassword = 'password1234'
+
+# Email you want to send the update to
+toEmail = 'anotheremail@gmail.com'
+```
+
+The `mail.py` file uses a gmail SMTP server and sends an email with an picture of the object detected by the camera. 
+
+Some other modifications you can make are in `main.py`
+
+
+```
+email_update_interval = 600 # sends an email only once in this time interval
+video_camera = VideoCamera(flip=True) # creates a camera object, flip vertically
+object_classifier = cv2.CascadeClassifier("models/fullbody_recognition_model.xml") # an opencv classifier
+```
+
+Here you can choose different types of objects you want to detect by switching for example from `"models/fullbody_recognition_model.xml"` to `"models/facial_recognition_model.xml"`
+
+There are 3 models available in the models directory.
+
+```
+facial_recognition_model.xml
+fullbody_recognition_model.xml
+upperbody_recognition_model.xml
+```
 
 
 ## 3. Prototype
