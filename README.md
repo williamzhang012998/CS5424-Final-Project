@@ -45,8 +45,8 @@ Edit the section where it asks you the email you want to send the update from an
 
 ```
 # Email you want to send the update from (only works with gmail)
-fromEmail = 'myemail@gmail.com'
-fromEmailPassword = 'password1234'
+fromEmail = 'InSafe@gmail.com'
+fromEmailPassword = 'IDDisthebest123'
 
 # Email you want to send the update to
 toEmail = 'anotheremail@gmail.com'
