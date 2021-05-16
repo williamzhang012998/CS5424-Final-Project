@@ -16,11 +16,11 @@ This project uses a Raspberry Pi Camera to stream video, a MPU6050 accelerometer
 
 ### a. Hardware Design
 
-![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable0.png)
-![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable.png)
-![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable1.png)
-![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable2.png)
-![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable3.png)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable0.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable1.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable2.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable3.jpg)
 
 
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer0.jpg)
