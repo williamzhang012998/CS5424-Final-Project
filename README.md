@@ -7,11 +7,29 @@
 
 **This auto-alarm band is a wearable device to protect the user from emergency situations. It is connected with an accelerometer and a camera. The two sides of the device are parallel to each other. When the user is encountering dangerous circumstances, for instance, robbery, the user raises arms, and the sensors will be perpendicular to the ground. The camera will start facial recognition and taking pictures of the robber. Simultaneously when the accelerometer start sensing that the arm is raised perpendicularly to the ground, it will first trigger voice recognition. When the user mentions the “money”, “purse”, “police”, and “shoot” the device will trigger an emergency call at the end.**
 
-## 2. Building the System
+## 2. Concept
+
+
+## 3. Building the System
 
 This project uses a Raspberry Pi Camera to stream video, a MPU6050 accelerometer and a microphone. 
 
 ### a. Hardware Design
+
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable0.png)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable.png)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable1.png)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable2.png)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable3.png)
+
+
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer0.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer1.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer2.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer3.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer4.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer5.jpg)
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer6.jpg)
 
 ### b. How to run Program
 
@@ -86,3 +104,6 @@ To view live stream of camera, go to `<raspberrypi_ip>:5000` in your browser.
 
 
 ## 4. Reflection
+
+
+## 5. References
