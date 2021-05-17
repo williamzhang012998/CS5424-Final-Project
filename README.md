@@ -9,6 +9,13 @@
 
 ## 2. Concept
 
+### a. State Diagram
+
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/state%20diagram.jpg)
+
+### b. Verplank Diagrams
+
+![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/verplank%20diagram.jpg)
 
 ## 3. Building the System
 
@@ -22,8 +29,32 @@ This project uses a Raspberry Pi Camera to stream video, a MPU6050 accelerometer
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable2.jpg)
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable3.jpg)
 
+**tesing the reading of the accelerometer to find a pattern when it is placed perpendicular VS not perpendicular**
+
+When the accelerometer is placed perpendicular (in real scenarios, the user raises arms), the webserver shows that **9 < x < 11**.
+
+Creating the webserver for the controller on a remote device:
+```
+pi@ixe00:~/$ python server.py
+ * Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-573-883
+```
+
+To run the app to see the accelerometer pattern remotely:
+
+`(woz) pi@yourHostname:~/Interactive-Lab-Hub/Final-Project $ python app.py`
 
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer0.jpg)
+
+Voice recognition triggered by placing the accelerometer perpendicular. The device will start recording speech and recognize "money", "purse", "police", and "shoot". When the user mentions these words, the screen will display an image of "calling 911".
+
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer1.jpg)
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer2.jpg)
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/accelerometer3.jpg)
