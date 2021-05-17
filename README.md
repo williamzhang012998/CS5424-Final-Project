@@ -140,6 +140,8 @@ https://drive.google.com/file/d/1OOAwmOg_YR7x5JOqOMqGnst5wNP6gMo3/view?usp=shari
 **Takeaways:**
 The integration of
 
+The idea of deploying the accelerometer to trigger voice recognition was inspired by the healthcare tracking device Jeanne made in Lab 3. In Lab 3, "The most amazing part of the system is that the the Speech2Text could recognize speech input and print it out. The app.py in the demo also inspired me that I could integrate the accelerometer with the speech recognition function. The accelerometer could sense the angle of the device and visualize it via x, y, z. So I could harness the accelerometer to trigger Speech2Text. Therefore, I think of a wearable device that could recognize and analyze voice when one raises his or her arm and when the device is placed flat." However, the Sppech2Text model didn't work effectively as expected in Lab 3.Tthe texts it printed out are not identical with what was being recognized, which makes it super difficult to trigger the next step -- presenting corresponding images on the TFT screen. In this project, we fixed the model, and the voice recognition workes pretty well.
+
 **Limitations:**
 Jeanne is responsible for prototype design and developing the accelorometer functionality with Speech2Text. And William is responsible for developing the camera model and merge the two models into one. Since we are working remotely, when we integrate the sensors to the 3D-printing prototype, sometimes it was hard to test the functionalities on the device.
 
