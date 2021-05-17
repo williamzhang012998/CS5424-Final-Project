@@ -136,5 +136,12 @@ To view live stream of camera, go to `<raspberrypi_ip>:5000` in your browser.
 
 ## 4. Reflection
 
+**Takeaways:**
+The integration of
+
+**Limitations:**
+Jeanne is responsible for prototype design and developing the accelorometer functionality with Speech2Text. And William is responsible for developing the camera model and merge the two models into one. Since we are working remotely, when we integrate the sensors to the 3D-printing prototype, sometimes it was hard to test the functionalities on the device.
+
+Further, the ultimate goal of the smart alert band is to not only record the robber's face but also call emergency. But at this stage, we don't know how to connect the device to a real phone and make real phone call, so we could just use the voice recognition to trigger the screen display. However, we see great potential in the further development of connecting the device to make a real emergency call. Such a mechanism would also work for other emergency situations, for instance, when an elderly adult slips down.
 
 ## 5. References
