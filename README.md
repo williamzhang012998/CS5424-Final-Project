@@ -3,7 +3,6 @@
 ## 1. Introduction
 
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/logo1.png)
-![logo2](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/logo2.png)
 
 **This auto-alarm band is a wearable device to protect the user from emergency situations. It is connected with an accelerometer and a camera. The two sides of the device are parallel to each other. When the user is encountering dangerous circumstances, for instance, robbery, the user raises arms, and the sensors will be perpendicular to the ground. The camera will start facial recognition and taking pictures of the robber. Simultaneously when the accelerometer start sensing that the arm is raised perpendicularly to the ground, it will first trigger voice recognition. When the user mentions the “money”, “purse”, “police”, and “shoot” the device will trigger an emergency call at the end.**
 
@@ -22,6 +21,8 @@
 This project uses a Raspberry Pi Camera to stream video, a MPU6050 accelerometer and a microphone. 
 
 ### a. Hardware Design
+
+When we design the band, we try to make the two sides of the device that are connected to the camera parallel to each other, so when the user raises arms, the camera will start taking picture of the robber's face, and the sensor will have voice recognition triggered by sensing that the device is perpendicular to the ground.
 
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable0.jpg)
 ![logo1](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/wearable.jpg)
@@ -138,14 +139,18 @@ https://drive.google.com/file/d/1OOAwmOg_YR7x5JOqOMqGnst5wNP6gMo3/view?usp=shari
 ## 4. Reflection
 
 **Takeaways:**
-The integration of
+Initially, we try to make something portable to solve some real pain point. The integration of of the camera and the accelerometer was taking consideration of the hand movement when people face dangerous situations, like robbery, they will need to raise their arms. So we make the natural movement as our interaction to trigger the sensors on the device.
 
 The idea of deploying the accelerometer to trigger voice recognition was inspired by the healthcare tracking device Jeanne made in Lab 3. In Lab 3, "The most amazing part of the system is that the the Speech2Text could recognize speech input and print it out. The app.py in the demo also inspired me that I could integrate the accelerometer with the speech recognition function. The accelerometer could sense the angle of the device and visualize it via x, y, z. So I could harness the accelerometer to trigger Speech2Text. Therefore, I think of a wearable device that could recognize and analyze voice when one raises his or her arm and when the device is placed flat." However, the Sppech2Text model didn't work effectively as expected in Lab 3.Tthe texts it printed out are not identical with what was being recognized, which makes it super difficult to trigger the next step -- presenting corresponding images on the TFT screen. In this project, we fixed the model, and the voice recognition workes pretty well.
 
 **Limitations:**
-Jeanne is responsible for prototype design and developing the accelorometer functionality with Speech2Text. And William is responsible for developing the camera model and merge the two models into one. Since we are working remotely, when we integrate the sensors to the 3D-printing prototype, sometimes it was hard to test the functionalities on the device.
+Jeanne is responsible for prototype design and developing the accelorometer functionality with Speech2Text. And William is responsible for developing the camera model and merge the two models into one. And we work together on other documentation parts. Since we are working remotely, when we integrate the sensors to the 3D-printing prototype, sometimes it was hard to test the functionalities on the device.
 
 Further, the ultimate goal of the smart alert band is to not only record the robber's face but also call emergency. But at this stage, we don't know how to connect the device to a real phone and make real phone call, so we could just use the voice recognition to trigger the screen display. However, we see great potential in the further development of connecting the device to make a real emergency call. Such a mechanism would also work for other emergency situations, for instance, when an elderly adult slips down.
+
+Future implementation - Connect to the phone app or just making a phone call:
+
+![logo2](https://github.com/williamzhang012998/CS5424-Final-Project/blob/main/logo2.png)
 
 ## 5. References
 
